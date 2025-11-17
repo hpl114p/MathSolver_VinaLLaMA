@@ -1,8 +1,5 @@
 # MathSolver VinaLLaMA
-Implementation of a Vietnamese Math Reasoning LLM using VinaLLaMA and supervised fine-tuning (SFT) on math word problems.
-
-This project fine-tunes the VinaLLaMA family model to solve Vietnamese math word problems.
-I load the pretrained model, evaluate baseline performance, then fine-tune using custom math datasets.
+Vietnamese Math Reasoning LLM based on VinaLLaMA, fine-tuned using LoRA to solve math word problems. The project involves loading a pretrained model, evaluating baseline performance, and adapting it to custom Vietnamese math datasets with parameter-efficient tuning.
 
 ## Project Workflow
 * Step 1: Import libraries/modules
@@ -226,7 +223,7 @@ Wall time: 4min 14s
 ```
 
 Compare Table:
-|            | After Fine-tuning  | Before Fine-tuning |
+|            | LoRA  | Without LoRA |
 |----------------|--------------|---------------------|
 |   Inference Example Time | ~4m 14s | ~9.46s         |
 
